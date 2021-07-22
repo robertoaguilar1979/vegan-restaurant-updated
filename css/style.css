@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* variables */
+:root {
+
+    /* font size */
+    --fs-h1: 1.5rem;
+    --fs-h2: 1.2rem;
+    --fs-h3: 1rem;
+
+    /* font weight */
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* line height */
+    --line-heigh: 1.4;
+
+    /* website colors */
+    --green: #69a74e;
+    --primary: linear-gradient(#0288BD, #0288D1);
+    --primary-green: rgb(11, 247, 11);
+    --white: #fff;
+    --off-white: #F5F5F5;
+    --dark-grey: #212121;
+    --black: rgb(0, 0, 0);
+
+    /* social icon colors hover*/
+    --facebook: #3b5998;
+    --twitter: #1f59d1;
+    --instagram: #cb12e3;
+    --pinterest: #f00d16;
+
+
+
+}
+
+/* main text */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    padding: .75em 1.5em;
+    text-decoration: none;
+    color: var(--white);
+    transition: 250ms;
+}
+
+/**************************** header area *************************/
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/food.jpg) fixed center/cover no-repeat;
+    background-color: var(--dark-grey);
+    height: 100vh;
+}
+
+/*========== navbar ===========*/
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* vegan logo */
+.veganLogo {
+    height: 70px;
+    width: auto;
+    display: inline-block;
+}
+
+/* navigation */
+.navUl {
+    display: flex;
+    list-style: none;
+}
+
+.navUl li {
+    padding: 1em;
+    text-decoration: none;
+}
+
+.navUl a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-bottom: transparent;
+
+
+}
+
+.navUl a:hover {
+    border-bottom: 2px solid var(--green);
+    transition: all 250ms ease-in;
+
+
+}
+
+/*========= main text hero area =========*/
+
+.heroText {
+    color: var(--white);
+    margin: 0 auto;
+    padding-top: 20em;
+    padding-left: 2em;
+    max-width: 1200px;
+}
+
+.heroText h1 {
+    font-size: 4rem;
+    font-weight: var(--fw-black);
+    letter-spacing: 1px;
+}
+
+.heroText p {
+    font-size: 2rem;
+    padding-bottom: .75em;
+    font-weight: var(--fw-bold);
+}
+
+.heroText span {
+    color: var(--primary-green);
+
+}
+
+.heroText .app {
+    display: inline-block;
+    background-color: var(--green);
+    border-radius: 5px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2), 2px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: all 250ms;
+    margin-bottom: 1em;
+    margin-right: 1em;
+
+}
+
+.heroText .customer {
+    background: var(--primary);
+    border-radius: 5px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2), 2px 4px 4px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    transition: all 250ms;
+}
+
+.heroText .app:hover {
+    background-color: var(--dark-grey);
+    transform: scale(1.04);
+
+}
+
+.heroText .customer:hover {
+    background: var(--dark-grey);
+    transform: scale(1.04);
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .nav {
+        display: flex;
+    }
+
+    .navUl {
+        background: var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        left: 100%;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+        transition: all 250ms ease-in-out;
+
+    }
+
+    .heroText {
+        padding-top: 8em;
+    }
+
+    .hamburger {
+        color: var(--white);
+        display: block;
+        font-size: 2.5rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .close {
+        top: 5px;
+        right: 5px;
+        position: absolute;
+        font-size: 5rem;
+        color: var(--white);
+        display: block;
+        background: transparent;
+        border: none;
+        padding-right: .2em;
+        cursor: pointer;
+    }
+
+    .open {
+        left: 0;
+    }
+
+}
