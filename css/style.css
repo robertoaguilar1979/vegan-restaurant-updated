@@ -203,6 +203,7 @@ img {
         padding: 0;
         z-index: 10;
         transition: all 250ms ease-in-out;
+        gap: 2em;
 
     }
 
@@ -210,20 +211,33 @@ img {
         padding-top: 8em;
     }
 
+    .heroText h1 {
+        font-size: 3.5rem;
+        font-weight: var(--fw-black);
+        letter-spacing: 1px;
+    }
+
+    .heroText p {
+        font-size: 1.75rem;
+        padding-bottom: .50em;
+        font-weight: var(--fw-bold);
+    }
+
     .hamburger {
         color: var(--white);
         display: block;
         font-size: 2.5rem;
-        background-color: transparent;
-        border: none;
+        background: transparent;
         cursor: pointer;
+        padding: .5em;
+        border: none;
     }
 
     .close {
         top: 5px;
         right: 5px;
         position: absolute;
-        font-size: 5rem;
+        font-size: 4rem;
         color: var(--white);
         display: block;
         background: transparent;
