@@ -9,8 +9,9 @@
 
     /* font size */
     --fs-h1: 1.5rem;
-    --fs-h2: 1.2rem;
-    --fs-h3: 1rem;
+    --fs-h2: 2.50rem;
+    --fs-h3: 1.5rem;
+    --fs-p: 1.20rem;
 
     /* font weight */
     --fw-medium: 500;
@@ -250,4 +251,127 @@ img {
         left: 0;
     }
 
+}
+
+/******** About us **********/
+
+section {
+    margin: 0 auto;
+    padding: 4em;
+    /* max-width: 1200px; */
+}
+
+.about-us h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+}
+
+.about-us h2::after {
+    content: "";
+    width: 150px;
+    background-color: var(--green);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: .50em;
+    margin-bottom: .75em;
+}
+
+.about-us .main-para {
+    font-size: 1.30rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+
+.about-us h3 {
+    font-size: var(--fs-h3);
+}
+
+.about-us-div p {
+    font-size: 1.20rem;
+}
+
+.about-us-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.about-us-div i {
+    font-size: 2.5rem;
+    color: var(--green);
+    text-align: center;
+    display: block;
+    margin-bottom: .4em;
+}
+
+.about-us-div h3 {
+    text-align: center;
+    margin-bottom: .4em;
+}
+
+@media (max-width:500px) {
+    .about-us-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        text-align: center;
+    }
+}
+
+/**************** menu *********************/
+.menu {
+    background-color: var(--off-white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    row-gap: 3em;
+    grid-template-rows: masonry;
+
+}
+
+.menu>div {
+    border: rgba(0, 0, 0, 0.4) solid 1px;
+    padding: .25em;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3), 4px 4px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.menu h3 {
+    text-align: center;
+    margin-top: .5em;
+}
+
+.menu p {
+    margin-top: .25em;
+    padding: .75em;
+}
+
+.img-container {
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+
+}
+
+@media (max-width:500px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.5em;
+        text-align: center;
+
+    }
 }
