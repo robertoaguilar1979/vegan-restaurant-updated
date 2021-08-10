@@ -323,15 +323,32 @@ section {
 /**************** menu *********************/
 .menu {
     background-color: var(--off-white);
+}
+
+.menu h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+}
+
+.menu h2::after {
+    content: "";
+    width: 150px;
+    background-color: var(--green);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: .50em;
+    margin-bottom: .75em;
+}
+
+.menu-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
     row-gap: 3em;
-    grid-template-rows: masonry;
-
 }
 
-.menu>div {
+.menu-img>div {
     border: rgba(0, 0, 0, 0.4) solid 1px;
     padding: .25em;
     border-radius: 5px;
@@ -375,3 +392,90 @@ section {
 
     }
 }
+
+/******************** App Section *************/
+
+.app h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+}
+
+.app h2::after {
+    content: "";
+    width: 150px;
+    background-color: var(--green);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: .50em;
+    margin-bottom: .75em;
+}
+
+.app-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app-columns>img {
+    object-fit: contain;
+    margin-left: 15em;
+}
+
+.main-install {
+    padding: 3em;
+}
+
+.main-install>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.install h3 {
+    border: solid 3px var(--green);
+    border-radius: 100%;
+    padding: .75em;
+    margin: .25em;
+    min-width: 60px;
+    min-height: 60px;
+    text-align: center;
+}
+
+.install p {
+    margin-left: 1em;
+    font-size: 1.20rem;
+}
+
+.app-logo {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.app-logo a img {
+    max-height: 70px;
+    max-width: 200px;
+}
+
+@media (max-width:1050px) {
+    .app-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .app-columns>img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:500px) {
+    .main-install {
+        padding: 1em;
+    }
+
+    .app-logo {
+        display: flex;
+        flex-direction: column;
+    }
