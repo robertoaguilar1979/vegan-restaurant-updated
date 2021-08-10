@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 
-/* variables */
+/************ variables **********/
 :root {
 
     /* font size */
@@ -40,7 +40,7 @@
 
 }
 
-/* main text */
+/******** main text **********/
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--black);
@@ -60,7 +60,7 @@ img {
     transition: 250ms;
 }
 
-/**************************** header area *************************/
+/****************** header area **********************/
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/food.jpg) fixed center/cover no-repeat;
     background-color: var(--dark-grey);
@@ -253,7 +253,7 @@ img {
 
 }
 
-/******** About us **********/
+/***************** About us ********************/
 
 section {
     margin: 0 auto;
@@ -483,3 +483,5 @@ section {
         display: flex;
         flex-direction: column;
     }
+
+    /************* locations section ****************/
