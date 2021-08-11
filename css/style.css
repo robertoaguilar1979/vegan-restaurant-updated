@@ -29,6 +29,7 @@
     --off-white: #F5F5F5;
     --dark-grey: #212121;
     --black: rgb(0, 0, 0);
+    --primary-phone: rgb(4, 101, 247);
 
     /* social icon colors hover*/
     --facebook: #3b5998;
@@ -253,6 +254,12 @@ img {
 
 }
 
+@media (max-width:400px) {
+    .heroText {
+        padding-top: 4em;
+    }
+}
+
 /***************** About us ********************/
 
 section {
@@ -389,6 +396,10 @@ section {
 
 @media (max-width:500px) {
     .menu {
+        padding: 1em;
+    }
+
+    .menu-img {
         display: grid;
         grid-template-columns: 1fr;
         padding: 1.5em;
@@ -483,5 +494,93 @@ section {
         display: flex;
         flex-direction: column;
     }
+}
 
-    /************* locations section ****************/
+/************* locations section ****************/
+.location {
+    background-color: var(--off-white);
+}
+
+.location h1 {
+    font-size: var(--fs-h2);
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+.location h1::after {
+    content: "";
+    width: 150px;
+    background-color: var(--green);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: .50em;
+    margin-bottom: .75em;
+}
+
+.img-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1em;
+    text-align: center;
+}
+
+.img-location img {
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3), 4px 4px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.img-location>a {
+    font-size: 1.3rem;
+    color: var(--instagram);
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+.img-location i::before {
+    padding-right: .25em;
+}
+
+.img-location>p {
+    margin-top: 1em;
+    margin-bottom: .25em;
+    font-size: 1.4rem;
+    font-weight: var(--fw-bold);
+
+}
+
+
+
+address p {
+    font-size: 1.1rem;
+    line-height: var(--line-heigh);
+    text-align: center;
+}
+
+address a {
+    color: var(--primary-phone);
+    margin-left: .5em;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+.phone-emoji {
+    font-size: 1.15rem;
+    color: var(--green);
+}
+
+@media (max-width:500px) {
+    .location {
+        padding: 1em;
+    }
+
+    .menu-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+/*************** our customers ********************/
