@@ -569,6 +569,7 @@ address a {
 .phone-emoji {
     font-size: 1.15rem;
     color: var(--green);
+    font-style: normal;
 }
 
 @media (max-width:500px) {
@@ -584,3 +585,70 @@ address a {
 }
 
 /*************** our customers ********************/
+.customers {
+    background: url(../img/veganPizza.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(5, 4, 4, 0.7);
+    color: var(--white);
+    line-height: var(--line-heigh);
+}
+
+.statement-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.customers h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+.customers h2::after {
+    content: "";
+    width: 150px;
+    background-color: var(--green);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: .50em;
+    margin-bottom: .75em;
+}
+
+blockquote {
+    line-height: 1.75;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.left {
+    margin-right: 1em;
+}
+
+.right {
+    margin-left: 1em;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.person img {
+    margin-top: 1.75em;
+    border-radius: 50%;
+}
+
+.person p {
+    font-size: 1.2rem;
+    margin-top: .5em;
+}
