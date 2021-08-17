@@ -900,7 +900,7 @@ textarea {
     font-size: 1rem;
     border-radius: 5px;
     color: rgba(0, 0, 0, 0.8);
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgb(0, 0, 0);
     border-width: 2px;
     cursor: pointer;
 
@@ -924,7 +924,7 @@ input[type="submit"] {
     color: var(--white);
     background-color: var(--black);
     transition: transform .2s;
-
+    border-style: inherit;
 
 }
 
@@ -941,5 +941,58 @@ input[type="submit"]:hover {
 
     form {
         padding: 1em;
+    }
+}
+
+/********************** footer ***********************/
+.footer {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--dark-grey);
+    font-size: 1.2rem;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.media-footer {
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+
+}
+
+.media-footer i {
+    margin-right: 1.25em;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.fa-pinterest:hover {
+    color: var(--pinterest);
+}
+
+.fa-twitter:hover {
+    color: var(--twitter);
+}
+
+.fa-facebook-f:hover {
+    color: var(--facebook);
+}
+
+.fa-instagram:hover {
+    color: var(--instagram);
+}
+
+@media(max-width:400px) {
+    .media-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
     }
 }
