@@ -297,7 +297,44 @@
         </div>
     </section>
 
-    <!-- contact section -->
+    <!----------------- contact section ---------------------->
+
+    <section class="contact" id="contact">
+        <h2>We Want To Hear from You</h2>
+        <div class="form">
+            <form action="" method="POST">
+                <div class="group">
+                    <label for="name">Name</label>
+                    <input type="text" id="text" required placeholder="Name">
+                </div>
+               <div class="group">
+                <label for="email" >Email</label>
+                <input type="email" id="Email" required placeholder="email">
+               </div>
+               <div class="group">
+                <label for="media">How did you hear from us?</label>
+                <select id="media">
+                    <option value="yelp" selected>Yelp</option>
+                    <option value="google">Google</option>
+                    <option value="happy cow">Happy cow</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="other">Other</option>
+                </select>
+               </div>
+               <div class="group">
+                <label for="newsletter" class="newsletter">newsletter</label>
+                <input type="checkbox" class="newsletter check">
+               </div>
+                <div class="group">
+                    <label for="paragraph">We want to hear from you</label>
+                <textarea name="textArea" id="paragraph" placeholder="Text Here"></textarea>
+                </div>
+                
+                
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+    </section>
     <script src="js/index.js"></script>
 </body>
 </html>

@@ -830,4 +830,116 @@ blockquote {
     }
 }
 
-/* contact section */
+
+/************************ contact section ***************************/
+.contact {
+    background: var(--off-white);
+}
+
+.contact h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+.contact h2::after {
+    content: "";
+    width: 150px;
+    background-color: var(--green);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: .50em;
+    margin-bottom: .75em;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em;
+    font-size: 1.5rem;
+    font-family: inherit;
+
+}
+
+.group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: .25em;
+}
+
+.newsletter {
+    display: inline;
+    width: 10%;
+}
+
+input[type="checkbox"] {
+    padding: 2em;
+    cursor: pointer;
+    height: 18px;
+}
+
+.check {
+    padding: 3em;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-family: inherit;
+    padding: .75em;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.8);
+    border-width: 2px;
+    cursor: pointer;
+
+}
+
+
+
+textarea {
+    resize: none;
+    overflow: auto;
+    height: 120px;
+}
+
+option {
+    font-size: 1.25rem;
+    font-family: inherit;
+
+}
+
+input[type="submit"] {
+    color: var(--white);
+    background-color: var(--black);
+    transition: transform .2s;
+
+
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+
+}
+
+@media (max-width:600px) {
+    .contact {
+        padding: 1em;
+    }
+
+    form {
+        padding: 1em;
+    }
+}
