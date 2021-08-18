@@ -788,7 +788,11 @@ blockquote {
     width: 100%;
     color: var(--black);
     cursor: pointer;
+    align-self: flex-end;
+
+
 }
+
 
 .pro .btn {
     color: var(--white);
@@ -882,9 +886,9 @@ label {
 }
 
 input[type="checkbox"] {
-    padding: 2em;
     cursor: pointer;
     height: 18px;
+
 }
 
 .check {
@@ -902,6 +906,7 @@ textarea {
     color: rgba(0, 0, 0, 0.8);
     border-color: rgb(0, 0, 0);
     border-width: 2px;
+    border-style: solid;
     cursor: pointer;
 
 }
@@ -994,5 +999,48 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5em;
+    }
+}
+
+/**************** up arrow ***************/
+
+.upArrow {
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 2rem;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+    padding: .35em;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.visible {
+    display: block;
+    animation: fadeIn 2s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
