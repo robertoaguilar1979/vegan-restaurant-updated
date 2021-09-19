@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <link<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Vegan Restaurant</title>
@@ -20,8 +21,8 @@
             <!-- navigation -->
             <nav class="nav">
                 <!-- vegan logo -->
-                <a href="index.html">
-                    <img src="img/veganLogo.png" alt="vegan logo" class="veganLogo">
+                <a href="index.html" class="logo-link">
+                    <p id="logo">Tofu <span class="logo-primary">King</span></p>
                 </a>
                 <button class="hamburger">
                     <i class="fas fa-bars"></i>
@@ -31,8 +32,8 @@
                     <li><a href="#home" class="list">Home</a></li>
                     <li><a href="#menu" class="list">Menu</a></li>
                     <li><a href="#locations" class="list">Locations</a></li>
-                    <li><a href="#signUp" class="list">Sign Up</a></li>
-                    <li><a href="#contact" class="list">Contact</a></li>
+                    <li><a href="#contact" class="list last">Contact</a></li>
+                    <!-- <li><a href="#signUp" class="list">Sign Up</a></li> -->
                 </ul>
                 
                 
@@ -40,46 +41,18 @@
         </div>
 
         <!-- main text hero area -->
-        <div class="heroText">
-            <h1>Say Goodbye To Junkfood</h1>
-            <p>Say Hello To Healthy <span>Vegan Food</span></p>
-            <a href="#app" class="btn app">Get Our App</a>
-            <a href="#customers" class="btn customer">Our happy customer</a>
-        </div>
-
+        <div class="hero-area">
+            <div class="heroText">
+                <h1>Enjoy Healthy</h1>
+                <h1>Eating at Any</h1>
+                <h1>Time.</h1>
+                <p class="hero-paragraph">Order Breakfast, Lunch, and Dinner at any Time.</p>
+                <a href="#signUp" class="btn customer">Sign Up</a>
+                <!-- <a href="#customers" class="btn customer" id="second-btn">Sign Up</a> -->
+            </div>
+            <img class="hero-img" src="img/veganBowl2.png" alt="">
+        </div>    
     </header>
-    <!-------------------------------- about us section ------------------->
-    <section class="about-us" id="about-us">
-        <h2>Get healthy food - Not Junkfood</h2>
-        <p class="main-para">Tired of fast food leaving you feeling disgusted and sleepy. Come and visit our Vegan restaurant full of nutritious delicious food that will give you energy and make you feel revived again.
-        </p>
-        <div class="about-us-div">
-            <div>
-                <i class="fas fa-carrot"></i>
-                <h3>100% Organic Food</h3>
-                <p>Out vegetables are brought in fresh daily from local farmers. The fruits and vegetables are non-gmo.
-                </p>
-            </div>
-            <div>
-                <i class="far fa-clock"></i>              
-                <h3>Ready in 30 minutes</h3>
-                <p>We know you are starving so everything is guarantee to be done in 30 minutes or less.
-                </p>
-            </div>
-            <div>
-                <i class="fas fa-heart"></i>               
-                <h3>Everything Fresh Daily</h3>
-                <p>Everything is made fresh daily to preserve the vitamins and minerals for your upmost health. Nothing is taken away or added everything is as nature intended.
-                </p>
-            </div>
-            <div>
-                <i class="fas fa-leaf"></i>                <h3>Go Green</h3>
-                <p>By buying here you are contributing to local organic farmers who grow everything 100% organically. They do it without using pesticides and chemicals that hurt the environment.
-                </p>
-            </div>
-        </div>
-
-    </section>
     <!-------------------------- menu section ------------------------------>
     <section class="menu" id="menu">
         <h2>Our Menu</h2>
@@ -143,31 +116,7 @@
                 </div>  
           
     </section>
-    <!------------------------ Get our app section ---------------------->
-    <section class="app" id="app">
-        <h2>Get Our App</h2>
-        <div class="app-columns">
-            <img src="img/cell1.png" alt="cell phone picture">
-            <div class="main-install">
-                <div class="install">
-                    <h3>1</h3>
-                    <p>Install our app from either Apple or Google app store.</p>
-                </div>
-                <div class="install">
-                    <h3>2</h3>
-                    <p>Once the app is installed put the order through the app or you can place an order by calling us also.</p>
-                </div>
-                <div class="install">
-                    <h3>3</h3>
-                    <p>Once you place the order will it will be delivered to you within 30 to 45 minutes.</p>
-                </div>
-                <div class="app-logo">
-                    <a href="https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank"><img src="img/googlePlay.png" alt="google app store"></a>
-                   <a href="https://www.apple.com/app-store/" target="_blank"> <img src="img/appleApp1.png" alt="apple app store"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!------------------------- locations section ---------------->
     <section class="location" id="locations">
         <h1>We're Located in these cities</h1>
@@ -175,7 +124,6 @@
             <div class="img-location">
                 <img src="img/longBeach.jpg" alt="long beach">
                 <p>Long Beach</p>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram">instagram</i></a>
                 <address>
                     <span class="phone-emoji">&#9742;</span><a href="tel:+5628888888">(562) 888-8888</a>
                     <p>1234 long beach st.</p>
@@ -185,7 +133,6 @@
             <div class="img-location">
                 <img src="img/losAngeles.jpg" alt="los Angeles">
                 <p>Los Angeles</p>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram">instagram</i></a>
                 <address>
                     <span class="phone-emoji">&#9742;</span><a href="tel:+2138888888">(213) 888-8888</a>
                     <p>1234 los angeles st.</p>
@@ -195,7 +142,6 @@
             <div class="img-location">
                 <img src="img/sanFrancisco.jpg" alt="san francisco">
                 <p>San Francisco</p>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram">instagram</i></a>
                 <address>
                     <span class="phone-emoji">&#9742;</span><a href="tel:+5628888888">(415) 888-8888</a>
                     <p>1234 san francisco st.</p>
@@ -205,7 +151,6 @@
             <div class="img-location">
                 <img src="img/seattle.jpg" alt="seattle">
                 <p>Seattle</p>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram">instagram</i></a>
                 <address>
                     <span class="phone-emoji">&#9742;</span><a href="tel:+5628888888">(206) 888-8888</a>
                     <p>1234 seattle st.</p>
@@ -251,7 +196,7 @@
     </section>
     <!------------------------ sign up ------------------------>
     <section class="signUp" id="signUp">
-        <h2>Start Easting Healthy Today</h2>
+        <h2>Start Eating Healthy Today</h2>
         <div class="plan-columns">
             <div class="plans basic light-shadow">
                 <h3>Basic</h3>
@@ -346,7 +291,7 @@
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
 
             </div>
-            <p>The Vegan Restaurant &copy; 2021</p>
+            <p>TOFU KING &copy; 2021</p>
         </footer>
     </section>
     <a href="#home"><i class="fas fa-arrow-up upArrow visible"></i></a>
