@@ -1,4 +1,4 @@
-let tl = gsap.timeline()
+let tl = gsap.timeline();
 
 
 tl.from(".heroText ", {
