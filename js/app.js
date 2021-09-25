@@ -3,10 +3,10 @@ let tl = gsap.timeline();
 
 tl.from(".heroText ", {
 
+    duration: 1.75,
     opacity: 0,
     scale: 0,
     ease: "back",
-    duration: 1.75,
     delay: 1.25,
 
 
@@ -14,10 +14,10 @@ tl.from(".heroText ", {
 })
 tl.from(".hero-area img", {
         duration: 1,
+        opacity: 0,
         ease: "back",
         delay: 1.25,
         xPercent: 80,
-        opacity: 0
     },
     "<"
 )
