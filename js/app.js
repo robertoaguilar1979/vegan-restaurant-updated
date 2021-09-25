@@ -1,29 +1,23 @@
 let tl = gsap.timeline();
 
 
-tl.fromTo(".heroText ", {
+tl.from(".heroText ", {
+
     opacity: 0,
     scale: 0,
-
-}, {
-    opacity: 1,
-    scale: 1,
     ease: "back",
     duration: 1.75,
     delay: 0.5,
 
 
-})
-tl.fromTo(".hero-area img", {
-        opacity: 0,
-        xPercent: 80,
 
-    }, {
+})
+tl.from(".hero-area img", {
         duration: 1,
         ease: "back",
         delay: .5,
-        xPercent: 0,
-        opacity: 1
+        xPercent: 80,
+        opacity: 0
     },
     "<"
 )
