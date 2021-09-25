@@ -7,7 +7,7 @@ tl.from(".heroText ", {
     scale: 0,
     ease: "back",
     duration: 1.75,
-    delay: 0.5,
+    delay: 1.25,
 
 
 
@@ -15,7 +15,7 @@ tl.from(".heroText ", {
 tl.from(".hero-area img", {
         duration: 1,
         ease: "back",
-        delay: .5,
+        delay: 1.25,
         xPercent: 80,
         opacity: 0
     },
