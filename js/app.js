@@ -1,7 +1,7 @@
 // let tl = gsap.timeline();
 
 
-gsap.from(".heroText ", {
+gsap.from(".hero-area img ", {
 
     duration: 1.75,
     opacity: 0,
@@ -12,15 +12,13 @@ gsap.from(".heroText ", {
 
 
 })
-gsap.from(".hero-area img", {
-        duration: 1,
-        opacity: 0,
-        ease: "back",
-        delay: 1.25,
-        xPercent: 80,
-    },
-    "<"
-)
+gsap.from(".heroText", {
+    duration: 1,
+    opacity: 0,
+    ease: "back",
+    delay: .75,
+    xPercent: -80,
+})
 
 gsap.from(".menu-img .card", {
     scrollTrigger: ".card",
