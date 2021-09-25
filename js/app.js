@@ -1,7 +1,7 @@
-let tl = gsap.timeline();
+// let tl = gsap.timeline();
 
 
-tl.from(".heroText ", {
+gsap.from(".heroText ", {
 
     duration: 1.75,
     opacity: 0,
@@ -12,7 +12,7 @@ tl.from(".heroText ", {
 
 
 })
-tl.from(".hero-area img", {
+gsap.from(".hero-area img", {
         duration: 1,
         opacity: 0,
         ease: "back",
